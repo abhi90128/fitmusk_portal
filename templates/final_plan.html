@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Your Recommended Plan</h2>
+
+{% if plan %}
+    <div style="text-align:center; margin-top:30px;">
+        <h3>{{ plan }}</h3>
+        <p>This structured plan aligns with your body type,
+           experience level, and preferred split.</p>
+        <p>Enroll through Fitmusk official platform.</p>
+    </div>
+{% else %}
+    <p>No plan found.</p>
+{% endif %}
+
+{% endblock %}

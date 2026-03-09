@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Select Your Body Type</h2>
+
+<div style="display:flex; justify-content:center; gap:40px; margin-top:30px;">
+
+    <div>
+        <a href="/experience/lean">
+            <img src="{{ url_for('static', filename='images/skinny.png') }}" width="220">
+        </a>
+        <p style="text-align:center;">Lean</p>
+    </div>
+
+    <div>
+        <a href="/experience/average">
+            <img src="{{ url_for('static', filename='images/skinny fat.png') }}" width="220">
+        </a>
+        <p style="text-align:center;">Average (16–22%)</p>
+    </div>
+
+    <div>
+        <a href="/experience/highbf">
+            <img src="{{ url_for('static', filename='images/Obese.png') }}" width="220">
+        </a>
+        <p style="text-align:center;">Higher Body Fat</p>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Recommended Plans</h2>
+
+<div style="text-align:center; margin-top:30px;">
+
+{% if plans %}
+
+    <ul style="list-style:none; font-size:20px;">
+
+    {% for plan in plans %}
+        <li style="margin:10px;">{{ plan }}</li>
+    {% endfor %}
+
+    </ul>
+
+{% else %}
+
+<p>No plan found.</p>
+
+{% endif %}
+
+</div>
+
+{% endblock %}

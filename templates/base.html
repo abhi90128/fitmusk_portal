@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitmusk Smart Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Fitmusk Smart Fitness Portal</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/bmi">BMI</a> |
+            <a href="/calorie">Calories</a> |
+            <a href="/macro">Macros</a> |
+            <a href="/faq">FAQs</a> |
+            <a href="/tips">Tips</a> |
+            <a href="/choose-plan">Choose Plan</a> 
+        </nav>
+    </header>
+
+    <hr>
+
+    {% block content %}{% endblock %}
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Fitmusk Smart Portal | Built with Flask</p>
+    </footer>
+
+</body>
+</html>

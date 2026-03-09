@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>FAQs</title>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    {% for item in faqs %}
+        <h3>{{ item.question }}</h3>
+        <p>{{ item.answer }}</p>
+        <hr>
+    {% endfor %}
+
+    <a href="/">Back to Home</a>
+
+</body>
+</html>
